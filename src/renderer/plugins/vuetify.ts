@@ -4,8 +4,6 @@ import { aliases, mdi } from 'vuetify/iconsets/mdi'
 import 'vuetify/styles'
 import '@mdi/font/css/materialdesignicons.min.css'
 
-import colors from 'vuetify/lib/util/colors.mjs'
-
 export default createVuetify({
   locale: {
     messages: { ko, en, zhHans, zhHant, de, es, ja, fr, ru, pt, nl },
@@ -24,13 +22,27 @@ export default createVuetify({
       light: {
         dark: false,
         colors: {
-          primary: colors.green.darken2
+          primary: '#0969da',
+          secondary: '#f6f8fa',
+          background: '#ffffff',
+          surface: '#f6f8fa',
+          error: '#cf222e',
+          info: '#0550ae',
+          success: '#2da44e',
+          warning: '#bf8700'
         }
       },
       dark: {
         dark: true,
         colors: {
-          primary: colors.green.darken4
+          primary: '#1f6feb',
+          secondary: '#0d1117',
+          background: '#0d1117',
+          surface: '#161b22',
+          error: '#f85149',
+          info: '#58a6ff',
+          success: '#238636',
+          warning: '#d29922'
         }
       }
     }
